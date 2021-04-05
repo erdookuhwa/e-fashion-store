@@ -1,15 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './App.css';
-import HomePage from './homepage.components';
+import HomePage from './pages/homepage/homepage.components';
 
 function App() {
   return (
     <div className="App">
-      <h1>CRWN CLOTHING</h1>
-
       <HomePage />
-       
     </div>
   );
 }
