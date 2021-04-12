@@ -13,7 +13,7 @@ import { selectCurrentUser } from '../../redux/user/user.selector';
 import './header.styles.scss';
 
 
-const Header = ({ currrentUser, hidden }) => (
+const Header = ({ currentUser, hidden }) => (
     <div className='header'>
         <Link to='/' className='logo-container' >
             <Logo className='logo' />
@@ -27,7 +27,7 @@ const Header = ({ currrentUser, hidden }) => (
                 CONTACT
             </Link>
 
-            { currrentUser ? (
+            { currentUser ? (
                 <div className='option' onClick={() => auth.signOut()}>
                     SIGN OUT
                 </div>

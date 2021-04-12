@@ -18,7 +18,6 @@ import CheckoutPage from './pages/checkout/checkout.component';
 
 
 class App extends Component {
-
   unsubscribeFromAuth = null;
 
   componentDidMount() {
@@ -34,6 +33,7 @@ class App extends Component {
               ...snapShot.data()
           });
         });
+        console.log(this.state);
       }
 
       setCurrentUser(userAuth);
